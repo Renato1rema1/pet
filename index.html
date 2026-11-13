@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PetPurple | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,10 @@
         <div class="nome"><span class="n1">Pet</span><span class="n2">Purple</span></div>
         <nav>
             <ul>
-                <li><a class="link-menu">Home</a></li>
-                <li><a class="link-menu">Sobre</a></li>
+                <li><a href="index.html" class="link-menu">Home</a></li>
+                <li><a href="index.html#sobre" class="link-menu">Sobre</a></li>
                 <li><a href="servicos.html" class="link-menu">Serviços</a></li>
-                <li><a class="link-menu">Contato</a></li>
+                <li><a href="contato.html" class="link-menu">Contato</a></li>
             </ul>
         </nav>
 
@@ -28,7 +28,7 @@
     </header>
     <main>
         <div>
-            <img src="./img/logo.jpg" alt="logo" class="logo">
+            <img src="logo.jpg" alt="Logo da PetPurple" class="logo">
             <div class="texto">
                 <h1 class="titulo">NÓS CUIDAMOS</h1>
                 <h2 class="sub-titulo">Do Seu Pet</h2>
@@ -40,11 +40,22 @@
         </div>
     </main>
     <div class="dogs-div">
-        <img src="" class="img-dog">
+        <!-- imagem aleatória vinda da API https://dog.ceo/ -->
+        <img src="" alt="Foto aleatória de um cachorro" class="img-dog">
     </div>
 
+    <!-- aula 12 - Incorporando Vídeo -->
+    <section id="sobre" class="sobre">
+        <h2 class="titulo">Sobre nós</h2>
+        <p class="paragrafo paragrafo-sobre">Veja como cuidamos do banho do seu pet com segurança e carinho.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/H9-PWEG3TFQ"
+            title="Como dar banho em cachorro" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Vander Martins Alves de Oliveira. Todos os direitos reservados.</p>
+        <p>&copy; 2026 PetPurple. Todos os direitos reservados.</p>
     </footer>
 
     <script src="app.js"></script>
